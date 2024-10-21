@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #000;
+  color: #00ff00;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: #00ff00;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.terminal-window {
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.command-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #00ff00;
+  margin-right: 10px;
+}
+
+.command {
+  color: #ffffff;
+}
+
+.output {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
