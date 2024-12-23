@@ -49,11 +49,11 @@ function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="flex items-center">
                   <Shield className="mr-2" />
-                  <span>Cybersecurity Solutions</span>
+                  <span>Services offered:</span>
                 </div>
                 <div className="flex items-center">
                   <Zap className="mr-2" />
-                  <span>Threat Intelligence</span>
+                  <span>Security Advisory services</span>
                 </div>
                 <div className="flex items-center">
                   <Code className="mr-2" />
@@ -61,7 +61,7 @@ function App() {
                 </div>
                 <div className="flex items-center">
                   <Terminal className="mr-2" />
-                  <span>Penetration Testing</span>
+                  <span> VPS, Web and Dedicated Server Hardening services</span>
                 </div>
               </div>
             }
@@ -80,9 +80,9 @@ function App() {
             command="./contact_us.sh" 
             output={
               <div>
-                <p>Email: info@alinuxa.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
-                <p>Address: 123 Cyber Street, Tech City, TC 12345</p>
+                <p>Email: alinuxa@alinuxa.com</p>
+                <p>Phone: +1 877-822-8756</p>
+                <p>NOTE: THIS WEBSITE IS STILL UNDER WORK</p>
               </div>
             }
           />
