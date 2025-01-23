@@ -7,10 +7,8 @@ const TypeWriter = ({ text, speed = 50 }: { text: string; speed?: number }) => {
   useEffect(() => {
     let i = 0;
     const timer = setInterval(() => {
-      if (currentIndex <= text.length) {
-        setDisplayText(text.slice(0, currentIndex));
-        currentIndex++;
-        setDisplayText((prev) => prev + text.charAt(i));
+      if (i < text.length) {
+        setDisplayText(prev => prev + text.charAt(i));
         i++;
       } else {
         clearInterval(timer);
