@@ -9,7 +9,6 @@ function App() {
           <div className="min-h-screen bg-black p-4">
             <div className="terminal-window">
               <TypeWriter text="corp@Alinuxa.com..." />
-              {/* Remove services grid from here */}
             </div>
           </div>
         } />
