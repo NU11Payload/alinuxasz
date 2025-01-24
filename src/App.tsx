@@ -5,17 +5,22 @@ const TypeWriter = ({ text, speed = 50 }: { text: string; speed?: number }) => {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
-    let i = 0;
+    setDisplayText(''); // Reset text when input changes
+    let currentIndex = 0;
+    
     const timer = setInterval(() => {
-      if (i < text.length) {
-        setDisplayText(prev => prev + text.charAt(i));
-        i++;
+      if (currentIndex < text.length) {
+        setDisplayText(text.substring(0, currentIndex + 1));
+        currentIndex++;
       } else {
         clearInterval(timer);
       }
     }, speed);
 
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+      setDisplayText('');
+    };
   }, [text, speed]);
 
   return (
