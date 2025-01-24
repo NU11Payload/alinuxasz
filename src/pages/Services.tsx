@@ -17,3 +17,4 @@ function App() {
     </Router>
   );
 }
+export default Services;
