@@ -34,7 +34,7 @@ const TypeWriter = ({ text, speed = 50 }: { text: string; speed?: number }) => {
   );
 };
 
-const Command = ({ command, output }: { command: string; output: string }) => (
+const Command = ({ command, output }: { command: string; output: React.ReactNode }) => (
   <div>
     <div className="command-line">
       <span className="prompt">Security@alinuxa:~$</span>
