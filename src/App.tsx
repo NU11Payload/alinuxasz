@@ -34,7 +34,7 @@ const TypeWriter = ({ text, speed = 50 }: { text: string; speed?: number }) => {
   );
 };
 
-const Command = ({ command, output }: { command: string; output: string }) => (
+const Command = ({ command, output }: { command: string; output: React.ReactNode }) => (
   <div>
     <div className="command-line">
       <span className="prompt">Security@alinuxa:~$</span>
@@ -74,7 +74,7 @@ const HomeContent = () => {
               </div>
               <div className="flex items-center">
                 <Zap className="mr-2" />
-                <span>Security Advisory services: Complianc=e and Risk Assessment</span>
+                <span>Security Advisory services: Compliance and Risk Assessment</span>
               </div>
               <div className="flex items-center">
                 <Code className="mr-2" />
