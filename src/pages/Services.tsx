@@ -11,17 +11,17 @@ const Services = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       name: 'Security Services',
-      description: 'Comprehensive security assessments, penetration testing, and implementation of robust cybersecurity measures.'
+      description: 'Advanced cybersecurity solutions'
     },
     {
       icon: <Code className="w-6 h-6" />,
       name: 'Development',
-      description: 'Full-stack development solutions including web applications, mobile apps, and enterprise software.'
+      description: 'Custom software development'
     },
     {
       icon: <Zap className="w-6 h-6" />,
       name: 'Performance',
-      description: 'System optimization, performance tuning, and infrastructure scaling solutions.'
+      description: 'System optimization'
     }
   ];
 
@@ -36,13 +36,16 @@ const Services = () => {
         
         <h1 className="text-green-500 text-2xl mb-6">Services_</h1>
         
-        <div className="space-y-6">
+        <div className="grid gap-6">
           {services.map((service, index) => (
-            <div key={index} className="flex items-center space-x-4 hover:bg-green-500/10 p-4 rounded-lg transition-colors">
-              <span className="text-green-500">{service.icon}</span>
+            <div 
+              key={index} 
+              className="flex items-center space-x-4 p-4 border border-green-500/20 rounded hover:border-green-500/40 transition-colors"
+            >
+              <div className="text-green-500">{service.icon}</div>
               <div>
-                <h2 className="text-green-500 font-mono">{service.name}</h2>
-                <p className="text-gray-400">{service.description}</p>
+                <h3 className="text-green-500 text-lg">{service.name}</h3>
+                <p className="text-gray-300">{service.description}</p>
               </div>
             </div>
           ))}
@@ -50,5 +53,6 @@ const Services = () => {
       </div>
     </div>
   );
-}
+};
+
 export default Services;
