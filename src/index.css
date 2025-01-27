@@ -51,3 +51,12 @@ body {
   margin-left: 20px;
   margin-bottom: 20px;
 }
+.text-warn {
+  color: #ff0000;
+}
+.text-body {
+  color: #d4dad4;
+}
+.text-h2 {
+  color: #00ff00;
+}

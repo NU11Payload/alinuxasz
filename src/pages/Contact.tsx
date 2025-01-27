@@ -20,13 +20,14 @@ function Contact() {
             <div className="flex items-center">
               <Phone className="mr-4 text-green-500" />
               <div>
-                <h2 className="text-green-500">Phone</h2>
-                <p className="text-gray-300">+1 877-822-8746</p>
+                <h2 className="text-h2">Phone</h2>
+                <p className="text-body">+1 877-822-8746</p>
               </div>
             </div>
 
             <div className="mt-8 p-4 border border-green-500 rounded">
-              <p className="text-yellow-500">NOTE: THIS WEBSITE IS STILL UNDER DEVELOPMENT</p>
+              <h1 className="text-warn">NOTE: THIS WEBSITE IS STILL UNDER DEVELOPMENT</h1>
+
             </div>
           </div>
         </div>
