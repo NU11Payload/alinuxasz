@@ -30,7 +30,7 @@ const TypeWriter = ({ text, speed = 50 }: TypeWriterProps) => {
   return (
     <span>
       {displayText}
-      <span className="animate-[blink_1s_steps(1)_infinite]">▋</span>
+      <span className="cursor">|</span>
     </span>
   );
 };

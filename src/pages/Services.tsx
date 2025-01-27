@@ -1,24 +1,22 @@
 import React from 'react';
 import { Shield, Code, Zap } from 'lucide-react';
 
-/**
- * Displays a list of services provided by Alinuxa LLC.
- *
- * @returns A component that displays a list of services.
- */
 const Services = () => {
   const services = [
     {
+      id: 'security-services',
       icon: <Shield className="w-6 h-6" />,
       name: 'Security Services',
       description: 'Advanced cybersecurity solutions'
     },
     {
+      id: 'development',
       icon: <Code className="w-6 h-6" />,
       name: 'Development',
       description: 'Custom software development'
     },
     {
+      id: 'performance',
       icon: <Zap className="w-6 h-6" />,
       name: 'Performance',
       description: 'System optimization'
@@ -26,26 +24,23 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black p-4">
-      <div className="terminal-window border border-green-500 rounded-lg p-6 bg-black/50 backdrop-blur">
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+    <div className="services-container min-h-screen p-8">
+      <div className="services-window mt-16">
+        <div className="window-controls">
+          <div className="control-button bg-red-500"></div>
+          <div className="control-button bg-yellow-500"></div>
+          <div className="control-button bg-green-500"></div>
         </div>
         
-        <h1 className="text-green-500 text-2xl mb-6">Services_</h1>
+        <h1 className="service-title mb-6">Services_</h1>
         
-        <div className="grid gap-6">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="flex items-center space-x-4 p-4 border border-green-500/20 rounded hover:border-green-500/40 transition-colors"
-            >
-              <div className="text-green-500">{service.icon}</div>
+        <div className="grid gap-6 mt-8">
+          {services.map((service) => (
+            <div key={service.id} className="service-card">
+              <div className="service-icon">{service.icon}</div>
               <div>
-                <h3 className="text-green-500 text-lg">{service.name}</h3>
-                <p className="text-gray-300">{service.description}</p>
+                <h3 className="service-title">{service.name}</h3>
+                <p className="service-description">{service.description}</p>
               </div>
             </div>
           ))}
