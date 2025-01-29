@@ -1,5 +1,3 @@
-Let's start by modifying the example Security Policy to fit the context of your website with account sign-ups.
-
 # Security Policy
 
 ----
