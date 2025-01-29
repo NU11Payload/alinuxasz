@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
+/* Base styles */
 body {
   font-family: 'Fira Code', monospace;
   background-color: #000;
@@ -21,6 +22,7 @@ body {
 @keyframes blink {
   0% { opacity: 0; }
   50% { opacity: 1; }
+  75% { opacity: 0.34; }
   100% { opacity: 0; }
 }
 
@@ -30,12 +32,34 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.window-controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.control-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.control-button:hover {
+  opacity: 1;
 }
 
 .command-line {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem; /* Changed from 10px to 0.625rem */
 }
 
 .prompt {
