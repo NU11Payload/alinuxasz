@@ -1,5 +1,4 @@
-import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 function Contact() {
   return (
@@ -27,12 +26,18 @@ function Contact() {
 
             <div className="mt-8 p-4 border border-green-500 rounded">
               <h1 className="text-warn">NOTE: THIS WEBSITE IS STILL UNDER DEVELOPMENT</h1>
+            </div>
+            
+            <div>
+              <h2 className=" mr-4 text-green-500">PGP Cannary</h2> 
+                <a className="text-body" href="pgp.txt">PGP</a> {/* HONESTLY FUCK DIVS */}
+              </div>
 
             </div>
           </div>
         </div>
       </div>
-    </div>
+    /*  Fuck divs, how do I center a div honestly still fr fr */
   );
 }
 
